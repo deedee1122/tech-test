@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    background-image: url('/bg.png');
+}
+
+/* in small devices the body will have different background image */
+/* @media screen and (max-width: 768px) {
+    body {
+        background-image: url('/bg-mobile.png'); //will get the image later
+    }
+} */
+
+/* navbar of the page */
+.header {
+    padding: 20px;
+}
+
+/* entire comment section */
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 55%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .comments-section {
+        max-width: 90%;
+    }
+}
+
+/* Header of the comment section */
+.comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #aeadad;
+}
+
+.sort-button {
+    border: none;
+    cursor: pointer;
+}
+
+.likes-button {
+    border: 1px solid #6b6c6e;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+/* header of each comment which contains username likes etc  */
+.comment__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+/* username section */
+.comment__header__left {
+    font-weight: bold;
+}
+
+/* likes section */
+.comment__header__right {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* comment body section */
+.comment {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #aeadad;
+    padding: 10px 20px 0 0;
+}
+
+/* paragraph or the comment */
+.comment__body {
+    color: #6b6c6e;
+}
